@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="dockerbuilder">
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+<script type="text/javascript">
+	angular.module("dockerbuilder", []).controller("main",
+			[ '$scope', '$http', function($scope, $http) {
+				$scope.dockerbuild = {};
+
+			} ]);
+</script>
+<title>Docker Image Builder</title>
+</head>
+<body ng-controller="main">
+	<!--  div>
+		<h2>Host Details</h2>
+		<label>Host uri: </label><input type="text"
+			ng-model="dockerbuild.host" />
+		<button ng-click="check()">Check Connection</button>
+	</div>
+	<div>
+		<h2>Repo Type</h2>
+		<input type="radio" ng-model="dockerbuild.repotype" ng-value="public">Public
+		<input type="radio" ng-model="dockerbuild.repotype" ng-value="private">
+		Private
+	</div>
+	<div>
+		<h2>Container Operating System</h2>
+	</div-->
+	<div>
+		<h2>Select Database enviornment</h2>
+	</div>
+	<button ng-click="build()">Build</button>
+</body>
+</html>
